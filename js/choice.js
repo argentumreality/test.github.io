@@ -18,6 +18,6 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-if(!isMobile.iOS()){
+if(isMobile.Android()){
        document.getElementById('next').style.display = 'none';
 };
